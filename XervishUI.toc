@@ -1,0 +1,24 @@
+## Interface: 80300
+## Author: Xervish
+## Title: |cFFFF7800Xervish|rUI
+## Notes: A consistently minimal and awesome UI. By Xervish of Nagrand
+## X-oUF: oUFXervish
+
+# Utilities
+Libraries\Utils.lua
+Libraries\xUI.lua
+
+# Defaults:
+Modules\Defaults\Defaults.lua
+
+# Chat
+Modules\Chat\Chat.lua
+
+# Data Bar:
+Modules\Data\Data.lua
+
+# Minimap:
+Modules\Map\Minimap.lua
+
+# Main Screen Turn On:
+Main.lua

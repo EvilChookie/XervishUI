@@ -1,0 +1,11 @@
+package-as: XervishUI
+
+enable-nolib-creation: no
+
+externals:
+  Libraries/oUF:
+    url: git://github.com/oUF-wow/oUF.git
+    tag: latest
+
+tools-used:
+  - ouf
