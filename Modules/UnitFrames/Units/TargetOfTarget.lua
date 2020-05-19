@@ -1,4 +1,6 @@
---player style func
+local A, L = ...
+local oUF = L.oUF
+
 local CreateTarget = function(self)
     SetUnitDefaults(self)
 

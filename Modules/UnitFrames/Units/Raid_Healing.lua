@@ -1,1 +1,2 @@
-local a = 1
+local A, L = ...
+local oUF = L.oUF

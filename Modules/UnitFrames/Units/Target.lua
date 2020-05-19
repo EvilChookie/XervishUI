@@ -1,3 +1,6 @@
+local A, L = ...
+local oUF = L.oUF
+
 local CreateTarget = function(self)
     SetUnitDefaults(self)
 
@@ -7,7 +10,7 @@ local CreateTarget = function(self)
 
     -- HP Value
     local hpVal = self:CreateFontString(nil, "OVERLAY")
-    hpVal:SetFont("Interface\\AddOns\\XervishUF\\Media\\Catamaran-Black.ttf", 48, "THINOUTLINE")
+    hpVal:SetFont("Interface\\AddOns\\XervishUI\\Fonts\\Catamaran-Black.ttf", 48, "THINOUTLINE")
     hpVal:SetPoint("TOPLEFT", self, 0, -2)
 
     -- Name

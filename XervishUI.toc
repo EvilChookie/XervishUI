@@ -4,21 +4,37 @@
 ## Notes: A consistently minimal and awesome UI. By Xervish of Nagrand
 ## X-oUF: oUFXervish
 
+# oUF:
+Libraries\oUF\oUF.xml
+
 # Utilities
-Libraries\Utils.lua
-Libraries\xUI.lua
+Common\Utils.lua
 
-# Defaults:
-Modules\Defaults\Defaults.lua
+# Configuration
+Config\xUI.lua
 
-# Chat
+# Module - UnitFrames:
+Modules\UnitFrames\Functions.lua
+Modules\UnitFrames\Units\Player.lua
+Modules\UnitFrames\Units\PlayerPet.lua
+Modules\UnitFrames\Units\Target.lua
+Modules\UnitFrames\Units\TargetOfTarget.lua
+Modules\UnitFrames\Units\Raid_DPS.lua
+Modules\UnitFrames\Units\Raid_Healing.lua
+Modules\UnitFrames\Units\Raid_Generator.lua
+Modules\UnitFrames\Units\Boss.lua
+
+# Module - ActionBars:
+Modules\ActionBars\ActionBars.lua
+
+# Module - Chat
 Modules\Chat\Chat.lua
 
-# Data Bar:
+# Module - Data Bar:
 Modules\Data\Data.lua
 
-# Minimap:
+# Module - Minimap:
 Modules\Map\Minimap.lua
 
-# Main Screen Turn On:
-Main.lua
+# Module - Defaults:
+Modules\Defaults\Defaults.lua

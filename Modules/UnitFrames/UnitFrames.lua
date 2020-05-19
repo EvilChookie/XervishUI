@@ -1,3 +1,6 @@
+local A, L = ...
+local oUF = L.oUF
+
 local function xUF_DPS_Style(self, unit)
 
 end

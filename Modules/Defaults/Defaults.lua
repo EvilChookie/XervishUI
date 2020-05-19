@@ -53,14 +53,25 @@ function xUI_SetDefaults()
     -- MOVE: Objective Tracker (so it lines up with Minimap):
     -- Calls to ObjectiveTrackerFrame:SetPoint are easily taintable - this avoids taint.
     -- Credit: http://www.wowinterface.com/forums/showthread.php?t=46733
-    local PointGettingSet
+    local objectiveTrackerPointGettingSet
     hooksecurefunc(ObjectiveTrackerFrame, "SetPoint", function(self)
-        if PointGettingSet then return end
-        PointGettingSet = true
+        if objectiveTrackerPointGettingSet then return end
+        objectiveTrackerPointGettingSet = true
         self:ClearAllPoints()
         self:SetPoint("TOPRIGHT", UIParent, "TOPRIGHT", -10, -210)
-        PointGettingSet = false
+        objectiveTrackerPointGettingSet = false
     end)
+
+    -- MOVE: Vehicle Seat Indicator:
+    local vehicleSeatIndicatorPointGettingSet
+    hooksecurefunc(VehicleSeatIndicator, "SetPoint", function(self)
+        if vehicleSeatIndicatorPointGettingSet then return end
+        vehicleSeatIndicatorPointGettingSet = true
+        self:ClearAllPoints()
+        self:SetPoint("TOPRIGHT", UIParent, "TOPRIGHT", -260, -210)
+        vehicleSeatIndicatorPointGettingSet = false
+    end)
+
 end
 
 XervishUI:RegisterCallback("PLAYER_LOGIN", xUI_SetDefaults)

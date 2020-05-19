@@ -1,3 +1,6 @@
+local A, L = ...
+local oUF = L.oUF
+
 local CreatePlayerPet = function(self)
     SetUnitDefaults(self)
 
