@@ -12,7 +12,7 @@ function xUI_Draw_Stat_Panel()
     statFrame:SetFrameStrata("BACKGROUND")
     statFrame:SetWidth(256)
     statFrame:SetHeight(18)
-    statFrame:SetPoint("BOTTOM", 0, 10)
+    statFrame:SetPoint("TOP", 0, -10)
     statFrame:Show()
 
     -- Put together some variables for our stat text:
@@ -22,7 +22,7 @@ function xUI_Draw_Stat_Panel()
         return " • "
     end
 
-    -- Experience, because I have alts and I like to see it.
+    -- Experience:
     local function getExperience()
         if UnitLevel("player") < MAX_PLAYER_LEVEL_TABLE[GetAccountExpansionLevel()] then
             -- Return XP as a percentage
@@ -39,7 +39,7 @@ function xUI_Draw_Stat_Panel()
         end
     end
 
-    -- Reputation, because I have alts and I like to see it.
+    -- Reputation:
     local function getReputation()
         if GetWatchedFactionInfo() then
             local name, standing, min, max, value, factionID = GetWatchedFactionInfo()
