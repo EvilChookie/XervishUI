@@ -36,7 +36,7 @@ L.cfg = {
     minimap = {
         scale = 1,
         mask = "Interface\\ChatFrame\\ChatFrameBackground",
-        point = { "TOPRIGHT", -10, -10 }
+        point = { "TOPRIGHT", -10, -12 }
     },
 
     -- DPS Layout
