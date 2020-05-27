@@ -30,7 +30,7 @@ function xUI_Draw_Stat_Panel()
 
             -- What if we're rested?
             if GetRestState() == 1 then
-                return string.format("%sXP: %s%% (Rested: %s%%)", seperator(), percentXP, GetXPExhaustion()/2)                
+                return string.format("%sXP: %s%% (Rested: %s)", seperator(), percentXP, GetXPExhaustion()/2)                
             else
                 return string.format("%sXP: %s%%", seperator(), percentXP)
             end

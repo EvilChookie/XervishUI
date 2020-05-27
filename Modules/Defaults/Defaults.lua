@@ -45,11 +45,6 @@ function xUI_SetDefaults()
     SetCVar("UnitNameHostleNPC", 0)
     SetCVar("UnitNameInteractiveNPC", 0)
 
-    -- DISABLE: Combat Text:
-    SetCVar("floatingCombatTextCombatDamage", 1)
-	SetCVar("floatingCombatTextCombatHealing", 1)
-	SetCVar("enableFloatingCombatText", 1)
-
     -- MOVE: Objective Tracker (so it lines up with Minimap):
     -- Calls to ObjectiveTrackerFrame:SetPoint are easily taintable - this avoids taint.
     -- Credit: http://www.wowinterface.com/forums/showthread.php?t=46733
@@ -60,6 +55,7 @@ function xUI_SetDefaults()
         self:ClearAllPoints()
         self:SetPoint("TOPRIGHT", UIParent, "TOPRIGHT", -10, -210)
         objectiveTrackerPointGettingSet = false
+        ObjectiveTrackerFrame:SetHeight(550)
     end)
 
     -- MOVE: Vehicle Seat Indicator:

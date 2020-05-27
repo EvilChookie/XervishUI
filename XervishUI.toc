@@ -24,9 +24,6 @@ Modules\UnitFrames\Units\Raid_Healing.lua
 Modules\UnitFrames\Units\Raid_Generator.lua
 Modules\UnitFrames\Units\Boss.lua
 
-# Module - ActionBars:
-Modules\ActionBars\ActionBars.lua
-
 # Module - Chat
 Modules\Chat\Chat.lua
 
