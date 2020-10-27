@@ -24,7 +24,7 @@ function xUI_Draw_Stat_Panel()
 
     -- Experience:
     local function getExperience()
-        if UnitLevel("player") < MAX_PLAYER_LEVEL_TABLE[GetAccountExpansionLevel()] then
+        if UnitLevel("player") < GetMaxLevelForPlayerExpansion() then
             -- Return XP as a percentage
             local percentXP = string.format("%.2f", (UnitXP("player")/UnitXPMax("player"))*100)
 

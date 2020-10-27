@@ -1,4 +1,4 @@
-## Interface: 80300
+## Interface: 90001
 ## Author: Xervish
 ## Title: |cFFFF7800Xervish|rUI
 ## Notes: A consistently minimal and awesome UI. By Xervish of Nagrand
@@ -19,10 +19,9 @@ Modules\UnitFrames\Units\Player.lua
 Modules\UnitFrames\Units\PlayerPet.lua
 Modules\UnitFrames\Units\Target.lua
 Modules\UnitFrames\Units\TargetOfTarget.lua
-Modules\UnitFrames\Units\Raid_DPS.lua
-Modules\UnitFrames\Units\Raid_Healing.lua
-Modules\UnitFrames\Units\Raid_Generator.lua
-Modules\UnitFrames\Units\Boss.lua
+
+# Module - Repair and Sell:
+Modules\RepairSell\RepairSell.lua
 
 # Module - Chat
 Modules\Chat\Chat.lua
