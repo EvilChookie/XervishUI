@@ -1,4 +1,4 @@
-## Interface: 90001
+## Interface: 100205
 ## Author: Xervish
 ## Title: |cFFFF7800Xervish|rUI
 ## Notes: A consistently minimal and awesome UI. By Xervish of Nagrand
@@ -19,18 +19,6 @@ Modules\UnitFrames\Units\Player.lua
 Modules\UnitFrames\Units\PlayerPet.lua
 Modules\UnitFrames\Units\Target.lua
 Modules\UnitFrames\Units\TargetOfTarget.lua
-
-# Module - Repair and Sell:
-Modules\RepairSell\RepairSell.lua
-
-# Module - Chat
-Modules\Chat\Chat.lua
-
-# Module - Data Bar:
-Modules\Data\Data.lua
-
-# Module - Minimap:
-Modules\Map\Minimap.lua
 
 # Module - Defaults:
 Modules\Defaults\Defaults.lua

@@ -26,7 +26,7 @@ end
 
 function xUF_CreateCastBar(isPlayerBar)
 	-- Configuration:
-	local texture = "Interface\\Addons\\SharedMedia\\statusbar\\Striped.tga"
+	local texture = "Interface\\Addons\\XervishUI\\Media\\StatusBar\\Striped.tga"
 	local c = {}
 
     -- Set up some basics:
@@ -80,7 +80,7 @@ function xUF_CreateCastBar(isPlayerBar)
 
 	-- Font Sizes and Shadows
 	Time:SetFont("Fonts\\SKURRI.ttf", 10, nil)
-	Text:SetFont("Fonts\\SKURRI.ttf", 10, nil)
+	Text:SetFont("Fonts\\ARIALN.ttf", 10, nil)
 	Time:SetShadowOffset(0, 0)
 	Text:SetShadowOffset(0, 0)
 	
@@ -127,7 +127,7 @@ oUF.Tags.Methods["xUF_SmartPowerValue"] = function(u)
 	local maxpower = UnitPowerMax(u)
 	local percentage = ((power/maxpower)*100)
 	if (powerType == "MANA") then
-		return string.format("%d (%d%%)", power, percentage)
+		return string.format("%s (%d%%)", ShortNumber(power), percentage)
 	elseif maxpower > 100 then
 		return string.format("%d (%d%%)", power, percentage)
 	else

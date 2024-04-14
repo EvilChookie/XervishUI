@@ -21,7 +21,7 @@ local CreatePlayer = function(self)
     -- Castbar!
     self.Castbar = xUF_CreateCastBar(true)
     self.Castbar:SetSize(200, 20)
-    self.Castbar:SetPoint("RIGHT", hpVal, 0, -40)
+    self.Castbar:SetPoint("CENTER", UIParent, 0, -235)
 
     -- PVP Indicator
     local PvPIndicator = self:CreateTexture(nil, 'ARTWORK', nil, 1)

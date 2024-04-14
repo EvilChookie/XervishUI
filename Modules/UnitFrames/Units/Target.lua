@@ -15,7 +15,7 @@ local CreateTarget = function(self)
 
     -- Name
     local name = self:CreateFontString(nil, "OVERLAY")
-    name:SetFont("Fonts\\SKURRI.ttf", 28, "THINOUTLINE")
+    name:SetFont("Fonts\\ARIALN.ttf", 28, "THINOUTLINE")
     name:SetPoint("LEFT", hpVal, 150, 0)
 
     -- Detail Block
